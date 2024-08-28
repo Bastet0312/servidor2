@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 20px;
+
+}
+header{
+    background-color: rgb(48, 132, 6);
+    width: 90%;
+    height: 110px;
+    margin-left: 5%;
+    border-radius: 20px;
+    box-shadow:  12px 12px 16px #71e21a;
+}
+
+header h1{
+
+    color: #faf5f5;
+    text-align: center;
+    font-size: 40px;
+    line-height: 70px;
+    text-shadow: 6px 6px 16px #060606;
+
+}
+
+header ul{
+
+    display: flex;
+    margin-left: 10%;
+   
+   
+}
+header ul li{
+
+    list-style-type: none;
+    margin-left: 15%;
+ 
+
+}
+header ul li a{
+    text-decoration: none;
+    line-height: 35px;
+  
+}
+
+header ul li :hover{
+    color: rgb(240, 242, 245);
+    background-color: rgb(81, 193, 72);
+    font-size: 20px;
+}
+
+

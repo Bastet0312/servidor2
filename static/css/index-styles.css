@@ -1,0 +1,84 @@
+.caja-grande{
+    background-color: rgb(9, 9, 9);
+    width: 90%;
+    height: 480px;
+    margin-top: 30px;
+    margin-left: 5%;
+    display: flex;
+    margin-right: 5%;
+    
+}
+
+.caja-p-1{
+    width: 30%;
+    height: 100%;
+    background-color: #01ab1af3;
+    border: 7px solid #f4f1f1;
+    overflow-y: scroll;
+    border-radius: 22px;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+
+.caja-p-2{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(3, 91, 10);
+    border: 7px solid #1af206;
+}
+
+.caja-p-2 img{
+    width: 320px;
+    height: 450px;
+    margin-right: 5%;
+    margin-top: 10px;
+    border-radius: 50px;
+
+}
+.carousel-item{
+    max-height:500px;
+    border-radius: 22px;
+}
+
+.cajasp {
+    background-color: rgb(251, 247, 247);
+    width: 80%;
+    height: 60%;
+    padding: 5%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-radius: 30%;
+    border: 8% solid #0f0e0e;
+    box-shadow: 10px 10px 10px #111110 ;
+}
+
+.caja-n-1 img{
+    width: 70%;
+    height: 90%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 15%;
+}
+
+.caja-n-2 img{
+    width: 70%;
+    height: 90%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 15%;
+}
+.caja-n-3 img{
+    width: 70%;
+    height: 90%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 15%;
+}
+
+.caja-n-4 img{
+    width: 70%;
+    height: 90%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 15%;
+}

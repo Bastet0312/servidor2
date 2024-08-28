@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/cabecera-styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/piepagina-styles.css')}}">
+    <title>{% block tittle %}Document{% endblock %}</title>
 </head>
+
 <body>
-    
+
     <header>
         <h1> My second Flask Frontent</h1>
-        <ul> 
+        <ul>
             <li>
                 <a href="{{url_for('home')}}">inicio</a>
             </li>
@@ -24,7 +31,12 @@
             </li>
         </ul>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>{% block content %}{% endblock %}</main>
+    <footer>
+        <h1> &copy;DarkGhost03</h1>
+    </footer>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

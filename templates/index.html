@@ -1,12 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename='/css/cabecera-styles.css')}}">    
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'plantilla.html'%}
+{% block tittle %} inicio {% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for ('static',filename='/css/index-styles.css')}}">
+
+<div class="caja-grande">
+
+    <div class="caja-p-1">
+
+        <div class="cajasp caja-n-1">
+            <img src="{{url_for('static',filename='/img/compu.jpeg')}}" alt="No se encuentra imagen">
+        </div>
+        <div class="cajasp caja-n-2">
+            <img src="{{url_for('static',filename='/img/compu2.jpeg')}}" alt="No se encuentra imagen">
+        </div>
+        <div class="cajasp caja-n-3">
+            <img src="{{url_for('static',filename='/img/matrix.jpeg')}}" alt="No se encuentra imagen">
+        </div>
+        <div class="cajasp caja-n-4">
+            <img src="{{url_for('static',filename='/img/robot.jpeg')}}" alt="No se encuentra imagen">
+        </div>
+    </div>
+    <div class="caja-p-2">
+        <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{url_for ('static',filename='/img/robot2.jpeg')}}" alt="Los Angeles" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for ('static',filename='/img/IA.jpeg')}}" alt="Chicago" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for ('static',filename='/img/desarrollo.jpeg')}}" alt="New York" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+
+    </div>
+</div>
+
+
+{% endblock %}
