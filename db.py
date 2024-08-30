@@ -26,7 +26,8 @@ def get_all_products():
         conector= conectar()
         productos = conector.execute('SELECT * FROM productos').fetchall()
         conector.close()
-        return productos 
+        return productos
+ 
 def add_product(nombre, descripcion, precio, imagen):
         conector = conectar()
         conector.execute('INSERT INTO productos (nombre , descripcion , precio , imagen) VALUES (?,?,?,?)' , (nombre , descripcion , precio , imagen))

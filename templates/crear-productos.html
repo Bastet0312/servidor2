@@ -5,18 +5,18 @@
 {% block content %}
 
 <div class="contenedor-productos-crear">
-    <h1>{% if productos %} Editar {% else %} Agregar {% endif %} productos</h1>
-    <form action="" method="POST">
+    <h1>{% if productos %} Editar {% else %} Agregar {% endif %} productos</h1> 
+    <form action="" method="POST"> 
 
         <input type="hidden" name="id_producto" value="{{productos.id if productos else ''}}">
          
         <!--Espacio para el nombre-->
-        <label for="name"> Nombre: </label>
-        <input type="text" name="id_producto" value="{{productos.id if productos else ''}}"><br><br>
+        <label for="nombre"> Nombre: </label>
+        <input type="text" name="nombre" value="{{productos.nombre if productos else ''}}"><br><br>
 
         <!--Espacio para la descripcion-->
-        <label for="Descripcion"> Descripcion: </label>
-        <input type="text" name="Descripcion" value="{{productos.descripcion if productos else ''}}" required> <br><br>
+        <label for="descripcion"> Descripcion: </label>
+        <input type="text" name="descripcion" value="{{productos.descripcion if productos else ''}}" required> <br><br>
     
         <!--Espacio para el precio-->
         <label for="precio">Precio: </label>
